@@ -8,7 +8,7 @@ class MVGNN(nn.Module):
         # Hyperparameters
         self.augment_eps = augment_eps
 
-        # Edge featurization layers augment_eps加了0.1的噪声
+        # Edge featurization layers augment_eps
         self.EdgeFeatures = EdgeFeatures(edge_features, top_k=k_neighbors, augment_eps=augment_eps)
         self.dropout = nn.Dropout(dropout)
 
