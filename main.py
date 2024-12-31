@@ -12,7 +12,7 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--dataset_path", type=str, default='./datasets/')
-parser.add_argument("--feature_path", type=str, default='./input/')
+parser.add_argument("--feature_path", type=str, default='./feature/')
 parser.add_argument("--output_path", type=str, default='./output/')
 parser.add_argument("--task", type=str, default='PRO') # PRO CA MG MN Metal
 parser.add_argument("--num_workers", type=int, default=8)
@@ -21,7 +21,6 @@ parser.add_argument("--seed", type=int, default=2024)
 args = parser.parse_args()
 
 seed = args.seed
-root = args.feature_path + 'feature/'
 Dataset_Path = args.dataset_path
 Feature_Path = args.feature_path
 output_root = args.output_path
@@ -37,7 +36,7 @@ ID_list = list(set(test_df['ID']))
 
 all_protein_data = {}
 for pdb_id in ID_list:
-    all_protein_data[pdb_id]=torch.load(root+f"{pdb_id}_X.tensor"),torch.load(root+f"{pdb_id}_node_feature.tensor"),torch.load(root+f"{pdb_id}_mask.tensor") ,torch.load(root+f"{pdb_id}_label.tensor"),torch.load('./input/SC_adj/'+f"{pdb_id}_adj.tensor")
+    all_protein_data[pdb_id]=torch.load(Feature_Path+f"{pdb_id}_X.tensor"),torch.load(Feature_Path+f"{pdb_id}_node_feature.tensor"),torch.load(Feature_Path+f"{pdb_id}_mask.tensor") ,torch.load(Feature_Path+f"{pdb_id}_label.tensor"),torch.load(Feature_Path+f"{pdb_id}_adj.tensor")
 
 
 nn_config = {
