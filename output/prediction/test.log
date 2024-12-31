@@ -1,0 +1,3 @@
+{'node_features': 1038, 'edge_features': 16, 'hidden_dim': 128, 'num_encoder_layers': 4, 'k_neighbors': 30, 'augment_eps': 0.1, 'dropout': 0.3, 'id_name': 'ID', 'obj_max': 1, 'epochs': 30, 'patience': 8, 'batch_size': 4, 'num_samples': 1675, 'folds': 5, 'seed': 2024, 'remark': 'PRO binding site prediction'}
+
+test_auc:0.844519, test_auprc:0.550410, testFYT_mccL:0.426063, test_acc:0.808810, test_pre:0.431605, test_rec:0.666024, test_f1:0.523782
