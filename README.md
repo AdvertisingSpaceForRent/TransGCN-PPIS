@@ -11,7 +11,10 @@ Bio 1.83
 Please visit [ProtTrans](https://github.com/agemagician/ProtTrans) on GitHub to download the model. Store the downloaded model in `./process_feature/pretrained_model/Rostlab/prot_t5_xl_uniref50.`
 ## Predicted structural feature generation
 **1.** Our protein structure predictions are generated using AlphaFold3. For detailed installation instructions, please refer to [AlphaFold3](https://github.com/google-deepmind/alphafold3) on GitHub.<br>
-**2.** We use the DSSP tool to extract secondary structure information. For detailed instructions, please refer to [DSSP](https://github.com/PDB-REDO/dssp) on GitHub. Before using the software, please grant execution permissions with: `chmod +x ./process_feature/Software/dssp-2.0.4/mkdssp`
+**2.** We use the DSSP tool to extract secondary structure information. For detailed instructions, please refer to [DSSP](https://github.com/PDB-REDO/dssp) on GitHub. Before using the software, please grant execution permissions with:
+```
+chmod +x ./process_feature/Software/dssp-2.0.4/mkdssp
+```
 ## Generate Features
 After completing the steps above, run the following command to generate features and save them in the `./feature` directory: 
 ```
