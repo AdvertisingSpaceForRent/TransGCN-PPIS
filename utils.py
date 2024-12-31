@@ -7,7 +7,7 @@ from tqdm import tqdm
 from sklearn.metrics import auc, roc_auc_score, precision_recall_curve
 from sklearn import metrics
 from torch.utils.data import DataLoader, RandomSampler
-from FocalLoss import *
+from focalLoss import *
 from noam_opt import *
 
 
