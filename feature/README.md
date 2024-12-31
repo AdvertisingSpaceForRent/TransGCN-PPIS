@@ -1,1 +1,1 @@
-### Deposit generated protein features
+### Save generated protein features here
