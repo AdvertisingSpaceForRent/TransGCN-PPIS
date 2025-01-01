@@ -20,7 +20,7 @@ After completing the steps above, run the following command to generate features
 ```
 python ./process_feature/process_feature.py
 ```
-Alternatively, you can download the features directly from our cloud drive: [Google Drive Link](https://drive.google.com/drive/folders/1sHd-2MmzdhmxvMjrNIugHw0RrBU8QYnR?usp=drive_link).
+Alternatively, you can download the features directly from our cloud drive: [Google Drive Link](https://drive.google.com/drive/my-drive).
 # Run MVGNN for prediction
 To predict datasets located in the ./datasets directory, run the following command:
 ```
